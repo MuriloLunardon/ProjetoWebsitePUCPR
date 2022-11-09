@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color:#f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 80px;
+    background: #1900ff;
+    background: -webkit-linear-gradient(to right, #393bca, #3c69ff);
+    background: linear-gradient(to right, #020366, #5e1df8);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+#usuario_emprestimo{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#data_emprestimo{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#data_devolucao{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+button{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background: #1900ff;
+    background: -webkit-linear-gradient(to right, #393bca, #3c69ff);
+    background: linear-gradient(to right, #020366, #5e1df8);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+::-webkit-datetime-edit { 
+    padding: 1em;
+    display: flex;
+    font-weight: bold;
+    font-size: 1em;
+    justify-content: center;
+}
+
+input[type="text"]{
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+
+.danger{
+    color: red;
+}
+
+.sucesso{
+    color: green;
+}
