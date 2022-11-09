@@ -31,6 +31,7 @@ include('verifica.php');
       <div class="menu">
         <li><a href="#">Home</a></li>
         <li><a href="emprestar.php">Emprestar</a></li>
+        <li><a href="alterasenha.php">Alterar Senha</a></li>
         <li><a href="emprestimos.php">Todos os empréstimos</a></li>
         <li><a href="meuperfil.php">Meu perfil</a></li>
         <li><a href="logout.php">Sair</a></li>
